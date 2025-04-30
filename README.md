@@ -1,10 +1,10 @@
 
 
-```markdown
+
 # 🚦 SmartRouteRL  
 _Reinforcement Learning for Intelligent Traffic Routing_
 
----
+```markdown
 
 ### 💡 Overview  
 SmartRouteRL is a reinforcement learning–powered route optimization framework built using Q-Learning and SARSA. Simulated with SUMO, it tackles urban traffic congestion by dynamically learning efficient routing strategies that outperform traditional algorithms like Dijkstra.
