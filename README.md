@@ -1,66 +1,96 @@
-🚦 SmartRouteRL
-Reinforcement Learning–Based Traffic Routing Optimization
-Solving urban congestion through intelligent route planning
 
-✨ Overview
-SmartRouteRL leverages Q-Learning and SARSA algorithms within a SUMO-simulated traffic environment to optimize vehicular routing in congested cities. Designed with efficiency and scalability in mind, it aims to outperform traditional models by learning dynamic routing policies.
 
-🧠 Core Tech Stack
-Python · NumPy · Matplotlib
+```markdown
+# 🚦 SmartRouteRL  
+_Reinforcement Learning for Intelligent Traffic Routing_
 
-SUMO (Simulation of Urban Mobility)
+---
 
-Q-Learning & SARSA (TD Algorithms)
+### 💡 Overview  
+SmartRouteRL is a reinforcement learning–powered route optimization framework built using Q-Learning and SARSA. Simulated with SUMO, it tackles urban traffic congestion by dynamically learning efficient routing strategies that outperform traditional algorithms like Dijkstra.
 
-🔍 Features
-RL-driven route decision-making
+---
 
-Adjustable reward functions
+### 🧠 Tech Stack  
+- **Language:** Python  
+- **Simulator:** [SUMO](https://www.eclipse.dev/sumo/)  
+- **Algorithms:** Q-Learning, SARSA  
+- **Libraries:** NumPy, Matplotlib  
 
-Visual performance tracking
+---
 
-Scalable to real-world maps (e.g., Sunway City)
+### ⚙️ Setup  
 
-Comparative evaluation against Dijkstra’s algorithm
-
-🚀 Setup
-bash
-Copy
-Edit
-# 1. Clone repo
-git clone <repo_url>
+```bash
+# Clone repository
+git clone https://github.com/your-username/SmartRouteRL.git
 cd SmartRouteRL
 
-# 2. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 3. Set SUMO directory
-# main.py
-os.environ["SUMO_HOME"] = "D:/path/to/SUMO/"
+# Set SUMO path in main.py
+os.environ["SUMO_HOME"] = "D:/path/to/SUMO"
 
-# 4. Run
+# Run the project
 python main.py
-🧪 Evaluation Metrics
-Policy Convergence Speed
+```
 
-Route Efficiency (time & distance)
+---
 
-Computational Performance
+### 📊 Features  
+- Adaptive route learning in static traffic networks  
+- Customizable reward functions  
+- Visual route and performance analysis  
+- Baseline comparison with Dijkstra’s algorithm  
+- Scenarios for increasing traffic density
 
-Traffic Density Response
+---
 
-📈 Visualizations
-python
-Copy
-Edit
-env.visualize_plot(edge_path)        # Route Map  
-env.plot_performance(episodes, log)  # Learning Curve
-🌍 Future Scope
-Real-time traffic API integration
+### 📁 Project Structure  
+```
+SmartRouteRL/
+│
+├── agent.py            # RL agent logic
+├── environment.py      # SUMO environment wrapper
+├── main.py             # Training and execution script
+├── utils.py            # Helper functions
+├── network_files/      # SUMO network files
+└── results/            # Output graphs and plots
+```
 
-Multi-agent RL deployment
+---
 
-Reward shaping for real-world constraints
+### 📈 Visual Output  
 
-A cleaner city starts with smarter routing.
-Crafted for cities that move.
+```python
+env.visualize_plot(edge_path)         # Route Map  
+env.plot_performance(episodes, log)   # Learning Curve  
+```
+
+---
+
+### 🛠️ Evaluation  
+- Convergence speed of agents  
+- Route efficiency vs Dijkstra  
+- Adaptability to traffic scenarios  
+- Reward scaling behavior
+
+---
+
+### 🧭 Use Cases  
+- Smart city navigation  
+- Simulation of urban mobility policies  
+- Benchmarking intelligent transport systems  
+
+---
+
+### 🌍 Future Directions  
+- Real-time data integration (e.g., live traffic)  
+- Multi-agent RL models  
+- Federated learning across city zones
+
+---
+
+> _SmartRouteRL — Driving smarter decisions, one route at a time._
+
